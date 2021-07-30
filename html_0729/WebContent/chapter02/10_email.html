@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<header>
+<center>
+<h1>&lt; 이메일 보내기 &gt;</h1>
+</center>
+</header>
+<a href="mailto:sile516@daum.net">받는사람</a><p/><!-- id -->
+<a href="mailto:sile516@daum.net?subject=질문있어요">받는사람,제목</a><p/><!-- pw -->
+<a href="mailto:sile516@daum.net?cc=smile516@naver.com&bcc=smile516@daum.net">받는사람,참조,숨은참조</a><p/><!-- id,pw,데이터 -->
+<a href="mailto:sile516@daum.net?cc=smile516@naver.com&bcc=smile516@daum.net&subject=질문있어요">받는사람,참조,숨은참조,제목</a><p/><!-- id,pw,데이터 -->
+<a href="mailto:sile516@daum.net?cc=smile516@naver.com&bcc=smile516@daum.net&subject=질문있어요&body=웹프로그래밍">받는사람,참조,숨은참조,제목,본문</a><p/><!-- id,pw,데이터 -->
+
+<a href="smile516@daum.net?body=Line1-text%0D%0ALine2-text">받는 사람, 본문 문단</a>
+
+</body>
+</html>
+
+<!-- 516smile@naver.com : 받는 사람의 이메일 주소
+          cc=smile516@daum.net : 참조할 사람의 이메일 주소
+          bcc=516smile@gmail.com : 숨은 참조할 사람의 이메일 주소
+          subject=질문 있어요 : 이메일 제목
+          body=웹 프로그래밍 : 이메일 본문
+          ? : 첫번째 구분자
+          & : 연속 구분자
+          %0D%0A : 엔 -->
