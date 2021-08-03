@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign up</title>
+<meta name="keyword" content="회원가입, HTML">
+</head>
+<body>
+	<h2>회원 가입</h2>
+	<hr />
+	<form action="" method="get">
+	<fieldset>
+		<legend>계정 정보</legend>
+		<div>
+		<label for="id-account">아이디</label>
+		<input type="text" name="account" placeholder="아이디를 입력하세요." id="id-account" required/><br>
+		</div>
+		비밀번호 <input type="password" placeholder="비밀번호를 입력하세요." /><br>
+		비밀번호 확인 <input type="password" placeholder="비밀번호를 입력하세요." /><br>
+	</fieldset>
+	<fieldset>
+		<legend>프로필</legend>
+		이름 <input type="text" placeholder="이름을 입력하세요." required="required" style = "background-color: #ff0000;"/><br>
+
+		생년월일 
+		<input type="number" min="1900" max="2030" placeholder="년"/>
+			<select>
+				<option selected>월</option>
+				<option value="1">1월</option>
+				<option value="2">2월</option>
+				<option value="3">3월</option>
+				<option value="4">4월</option>
+				<option value="5">5월</option>
+				<option value="6">6월</option>
+				<option value="7">7월</option>
+				<option value="8">8월</option>
+				<option value="9">9월</option>
+				<option value="10">10월</option>
+				<option value="11">11월</option>
+				<option value="12">12월</option>
+			</select>
+		<input type="number" min="1" max="31" placeholder="일"/><br>
+		
+		<input type="radio" value="male" />남자
+		<input type="radio" value="female" checked/>여자
+		<input type="radio" value="etc" />기타
+	</fieldset>
+<input type="checkbox" value="agree" required="required"/>
+ 사이트 이용약관과 개인정보 수집 방침에 동의합니다
+<p></p>
+<input type="submit" value="가입하기"/>
+</form>
+</body>
+</html>
+
+<!-- required: 중복값을 받지 않으므로  2번 결재가 되면 안되는 결재창 구현증에 사용됨  
+<label> 태그는 for 속성을 사용해서 <input> 태그의 id 속성에 연계해서 사용-->
+
