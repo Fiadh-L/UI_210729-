@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Adjacent Selector</title>
+<style>
+div>h2>ul{}
+h1+h2+ul{color: lightsteelblue;}
+
+body>h3{} /*h3 2개 모두에 적용됨*/
+div+h3{color: salmon;}/*2개 중에서 div랑 가까운1번 h3에 적용됨*/
+
+h3+p{color: violet; background: pink;}
+</style>
+</head>
+<body>
+<div>
+	<h1>인접 형제 선택자1</h1>
+	<h2>인접형제 선택자2</h2>
+		<ul>목록
+			<li>자식의 자식1</li>
+			<li>자식의 자식2</li>
+		</ul>
+</div>
+<h3>Adjacent Selector</h3>
+<p>인접선택자에 대한 스타일</p>
+<h3>Adjacent Selector</h3>
+<p>인접 선택자에 대한 스타일</p>
+</body>
+</html>
+
+<!-- '>'차일드 방식 이라고 하나봐... -->

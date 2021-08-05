@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+p[text] {color:red;}
+p[text="red"] {color: yellow; background-color: green;}
+p[text~="aa"] {color: pink; background-color: navy;}
+p[text|="a1"] {color: yellow; background-color: orange;}
+p[text^="img"] {color: yellow; background-color: pink;}
+p[text$="png"] {color: navy; background-color: orange;}
+p[text*="ong"] {color: orange; background-color:yellow;}
+
+</style>
+</head>
+<body>
+<p text="hello">모든 텍스트</p>
+<p text="red">텍스트 매칭 속성</p>
+<p text="aa bb cc">리스트 매칭 속성</p>
+<p text="a1-a2-a3">범위 배칭 속성</p>
+<p text="img/pic.jpg">텍스트 시작 매칭 속성</p>
+<p text="img/pic.png">텍스트 끝 매칭 속성</p>
+<p text="Soldesk ong">텍스트 패턴 매칭 속성</p>
+</body>
+</html>
+
+<!--~=일부일치 -->
+<!--|=이거 들어가는 거 '-' -->
+<!-- ^=시작하는 거-->
+<!-- $=끝나는거 -->
+<!-- *= 뭐지? -->
