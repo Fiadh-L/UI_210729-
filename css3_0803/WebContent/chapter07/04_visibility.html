@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>visibility</title>
+<style>
+img{
+width: 200px;
+height: auto;
+margin: 1%;}
+
+.v1{
+visibility: hidden;
+border: 1px dotted red;}
+
+.v2{
+visibility: visible;
+border: 3px dotted red;}
+
+.v3{
+display:none;
+border: 3px dotted red;}
+
+
+</style>
+</head>
+<body>
+<div class="v1"> <img src="../img/photo6.jpg" alt="" /></div><!-- 안보임 -->
+<div class="v2"> <img src="../img/photo2.jpg" alt="" /></div>
+<div class="v3"> <img src="../img/photo3.jpg" alt="" /></div><!-- 위치했던 공간까지 사라짐 -->
+<div class="v4"> <img src="../img/photo6.jpg" alt="" /></div>
+</body>
+</html>
