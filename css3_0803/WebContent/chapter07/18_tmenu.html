@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transition-property</title>
+<style>
+	a{text-decoration: none;
+				color: white;}
+				
+	div{
+	position: absolute;
+	left:0px;
+	width: 80px;
+	height: 50px;
+	background:#ff8080;
+	border: 1px solid red;
+	transition-property: width background;
+	transition-duration: 2s, 2s;}
+	/* transition property: 명시된 속성에 한해서 변경이 가능함! */
+	
+	div:hover{
+	width: 200px;
+	background: salmon;
+	text-align: center;
+	font-size: 30px;
+	transform: width;
+	transition-timing-function: linear;
+	}
+	
+	
+</style>
+</head>
+<body>
+	<div style="top:50px"><a href="#" target="new">HOME</a></div>
+	<div style="top:100px"><a href="#" target="new">ABOUT</a></div>
+	<div style="top:150px"><a href="#" target="new">NEWS</a></div>
+	<div style="top:200px"><a href="#" target="new">STUDY</a></div>
+	<div style="top:250px"><a href="#" target="new">CONTACT</a></div>
+</body>
+</html>
+<!-- 구현중일때/ 미완일때 링크에 #을 넣어둠! -->
