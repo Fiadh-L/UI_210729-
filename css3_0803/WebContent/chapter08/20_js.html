@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var day;
+var week=new Date().getDay(); //0(일요일) ~6(토요일)
+
+switch(week) {
+case 0:
+	day="일요일";break;
+case 1:
+	day="월요일";break;
+case 2:
+	day="화요일";break;
+case 3:
+	day="수요일";break;
+case 4:
+	day="목요일";break;
+case 5:
+	day="금요일";break;
+case 6:
+	day="토요일";break;
+default:
+	"없는 요일 입니다."; break;
+}
+document.write("오늘은 "+day+"입니다. <p/>");
+
+var text;
+var week=new Date().getDay();
+
+switch(week) {
+case 1:
+case 2:
+	text="HTML5";
+	break;
+	
+case 3:
+case 4:
+	text="CSS3";
+	break;
+	
+case 5:
+	text="JavaScript";
+	break;
+case 6:
+case 0:
+	text="주말";
+	break;
+}
+if(week<=5 && week>=1){
+	document.write("오늘은 "+text +"를 공부합니다.")
+} else {
+	document.write("오늘은 "+text +"입니다.")
+}
+
+</script>
+</body>
+</html>

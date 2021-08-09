@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+/* var x=1;
+var sum=0;
+while(x<=100) {
+    sum+=x;
+    x++;
+} 
+document.write("1~100까지 합 : <b>" + sum + "</b>");   */
+
+/* var x=1;
+var sum=0;
+do {
+    sum += x;
+    x++;
+} while(x<=100);
+document.write("1~100까지 합 : <b>" + sum + "</b>"); */
+
+var x=0;
+var sum=0;
+while(1) {
+    x+=3;   // 3의 배수
+    if(x>100)
+        break;
+    sum+=x;
+    document.write(x + " ");
+}
+document.write("<p/>");
+document.write("1~100까지 수 중 3의 배수 합 : <b>" + sum + "</b>");   
+
+</script>
+</body>
+</html>

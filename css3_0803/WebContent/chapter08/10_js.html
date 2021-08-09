@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>function</title>
+</head>
+<body>
+<script>
+function getGrade() {
+	var kor=95;
+	return kor;
+}
+
+getKor=getGrade();
+document.write("국어점수 : " + getKor +"<br>");
+</script>
+</body>
+</html>
+<!-- 지역변수 값은 함수 외부에서 사용할 수 없다. -->
+<!-- 지역 변수라고 하더라도 return으로 던져주면 함수 밖에서 받을 수는 있다. 자바에서 private get같은 너낌? -->
