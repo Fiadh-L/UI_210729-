@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var arrdata=[]; 
+	function insertArr() {     // 배열 데이터 입력 함수
+	    var i=0;
+	    for(i=0; i<=99; i++) { 
+	        arrdata[i]=i+1;    // 1~100까지 저장
+	    }   
+	    selectArr();
+	}
+	
+	function selectArr() {
+		var i;
+		for(var i=0; i<arrdata.length;i++){
+			document.write(arrdata[i]+" "); //조회하는 것처럼 보임
+		}
+		addArr();
+	}
+	
+	function addArr() {
+		var i;
+		var sum=0;
+		
+		for(var i=0; i<arrdata.length; i++) {
+			sum+=arrdata[i]; //다 불러와서 덧셈연산(읽어들인만큼 더해)
+		}
+		document.write("<p/> 배열의 덧셈결과 : " + sum + "<p/>");
+		document.write("<a href = '16_arr.html'>돌아가기</a>");
+	}
+</script>
+
+<button type="button" onclick="insertArr()">배열 생성/조회/연산</button>
+</body>
+</html>

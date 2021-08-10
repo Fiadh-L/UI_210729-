@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var kdata=['서울', '부산'];
+var p1 =kdata.unshift('청주','세종');
+document.write("데이터 : " + p1 + "<br/>");
+document.write("배열 데이터 : " + kdata + "<br/>");
+
+var p2 =kdata.shift(); //삭제 연산
+document.write("데이터 : " + p2 + "<br/>");
+document.write("배열 데이터 : " + kdata + "<br/>");
+</script>
+</body>
+</html>
+
+<!-- unshift 맨앞에 데이터 삽입하고 데이터의 갯수 반환 // shift 맨앞 데이터 삭제 -->

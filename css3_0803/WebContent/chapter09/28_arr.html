@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>filter arr</title>
+</head>
+<body>
+<script>
+var data=[21, 42, 33, 14, 25, 12, 37, 28, 16, 11]; 
+
+function filterArr(value) {
+    return value>=18;         
+}
+
+var fdata=data.filter(filterArr);
+document.write("필터 적용 전 : " + data + "<p/>");
+document.write("필터 적용 후 : " + fdata + "<p/>");
+</script>
+
+</body>
+</html>
