@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>설문조사</title>
+</head>
+<body>
+	<script>
+		var list=[
+			{
+				question:"당신이 가장 좋아하는 과일을 선택해주세요.",
+				options:["사과","복숭아","딸기","자두","귤"]
+			},
+			{
+				question:"당신이 가장 좋아하는 음식을 선택해주세요.",
+				options:["떡볶이","삼겹살","치킨","피자","곱창"]
+			},
+			{
+				question:"당신이 가장 좋아하는 반려동물을 선택해주세요.",
+				options:["강아지","고양이","토끼","새","도마뱀"]
+			}
+		];
+		
+		console.log(list);
+		
+		for(var i=0;i<list.length;i++){
+			var queMessage=list[i].question+'\n';
+			
+			for(var j=0;j<list[i].options.length;j++){
+				queMessage+=(j+1)+"번 "+list[i].options[j]+" ";
+			}
+		console.log(queMessage);
+		list[i].answer=prompt(queMessage);
+		}
+		
+		for(var i=0; i<list.length;i++){
+			var index=parseInt(list[i].answer);
+			var message=list[i].question+'\n당신의 선택 : ' + list[i].options[index-1];
+			
+			alert(message);
+		}
+	</script>
+</body>
+</html>

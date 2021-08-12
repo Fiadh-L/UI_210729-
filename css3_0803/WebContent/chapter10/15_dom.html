@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function add(){
+		var header=document.createElement('h3'); //요소생성
+		var textNode=document.createTextNode('내 이름은 튜브입니다.');
+		
+		header.appendChild(textNode);//append: 요소와 텍스트를 연결해줌
+		document.body.appendChild(header);
+		
+	}
+</script>
+
+</head>
+<body>
+	<a href="#" onclick="add()">당신의 이름은 무엇입니까?</a>
+	
+</body>
+</html>

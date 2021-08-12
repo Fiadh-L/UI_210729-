@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="digClock"></div>
+	<script>
+	function digClock(){
+		var today=new Date();
+		var day=today.getMonth()+1+"월 " + today.getDate()+"일";
+		var time=today.getHours()+"시 "+today.getMinutes()+"분 "+today.getSeconds()+"초";
+		
+		document.getElementById("digClock").innerHTML=day+time;
+		setTimeout('digClock()', 1000);
+		//1000이 1초 >>setTimeout('digClock()', 1000); : 1초에 1번 메서드를 읽어들임
+	}
+	//실시간 시계
+	digClock();
+	</script>
+</body>
+</html>

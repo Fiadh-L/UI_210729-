@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<p id="car"></p>
+	<p>[Car1 속성]</p>
+	<p id="car0"></p>
+	<p>[Car2 속성]</p>
+	<p id="car1"></p>
+	<p>[Car3 속성]</p>
+	<p id="car2"></p>
+	
+	<script>
+		 var car=new Array(
+			['Sonata','blue',100],
+			['Jeep','white',120],
+			['mini','black',70]
+			);
+ 
+	var cname=document.getElementById("car");
+	cname.textContent="car[2][1] : " + car[2][1];
+	
+	for(i=0;i<3;i++) {
+		/* 각각의 열 데이터 가져오기 */
+		/* var cname=document.getElementById("car"+i);
+		cname.textContent="car이름 : " + car[i][0]; */
+		
+		/* 행전체를 가져오기 */
+		var cname=document.getElementById("car"+i);
+		cname.textContent="car이름 : " + car[i];
+		
+		}
+	
+	/* for(var i=0; i<car.length; i++){
+		for(var j=0; j<car[i].length; j++){
+		cname.textContent="car name : " + car[i][0];
+		}
+	} */
+	</script>
+</body>
+</html>
+	<!-- //매개변수 들어갈 때 리스트화 해서 들어감 -->

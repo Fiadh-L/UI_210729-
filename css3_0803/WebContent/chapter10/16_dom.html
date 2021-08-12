@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	/*
+	function add(){
+		var img=document.createElement('img');
+			img.src='../img/photo1.jpg';
+			img.width=180;
+			img.height=200;
+			
+			document.body.appendChild(img);
+	}*/
+//속성 메서드 : setAttribute	
+	function add(){
+		var img=document.createElement('img');
+			img.setAtrribute('src', '../img/photo1.jpg');
+			img.setAtrribute('width', 180);
+			img.setAtrribute('height', 200);
+			
+			document.body.appendChild(img);
+	}
+</script>
+
+</head>
+<body>
+	<a href="#" onclick="add()">[이미지 추가]</a>
+	
+</body>
+</html>

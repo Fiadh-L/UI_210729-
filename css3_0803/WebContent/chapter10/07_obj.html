@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>[Hong's Car]</p>
+	<p id="carname"></p>
+	<p id="carcolor"></p>
+	<p id="carspeed"></p>
+	<p id="upspeed"></p>
+	<p id="downspeed"></p>
+	
+	<p>[Kim's Car]</p>
+	<p id="carname2"></p>
+	<p id="carcolor2"></p>
+	<p id="carspeed2"></p>
+	<p id="upspeed2"></p>
+	<p id="downspeed2"></p>
+
+	<script>
+		function Car(name, color, speed) {
+			this.name=name;
+			this.speed=speed;
+			this.color=color;
+			this.speedup=function() {
+				return this.speed+10;
+			};
+			this.speeddown=function() {
+				return this.speed-10;
+			};
+		}
+	
+		var Hongcar=new Car('Sonata','blue',100);
+		var Kimcar=new Car('Jeep','white',120);
+
+		var cname=document.getElementById("carname");
+		cname.textContent="자동차이름 : "+ Hongcar.name;
+		var colorname=document.getElementById("carcolor");
+		colorname.textContent="색상 : "+ Hongcar.color;
+		var cspeed=document.getElementById("carspeed");
+		cspeed.textContent="평균속도 : "+ Hongcar.speed;
+		var upspeed=document.getElementById("upspeed");
+		upspeed.textContent="속도 증가 : " + Hongcar.speedup();
+		var downspeed=document.getElementById("downspeed");
+		downspeed.textContent="속도 증가 : " + Hongcar.speeddown();
+		
+		var cname=document.getElementById("carname2");
+		cname.textContent="자동차이름 : "+ Kimcar.name;
+		var colorname=document.getElementById("carcolor2");
+		colorname.textContent="색상 : "+ Kimcar.color;
+		var cspeed=document.getElementById("carspeed2");
+		cspeed.textContent="평균속도 : "+ Kimcar.speed;
+		var upspeed=document.getElementById("upspeed2");
+		upspeed.textContent="속도 증가 : " + Kimcar.speedup();
+		var downspeed=document.getElementById("downspeed2");
+		downspeed.textContent="속도 증가 : " + Kimcar.speeddown();
+		
+	</script>
+</body>
+</html>
