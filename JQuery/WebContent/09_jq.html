@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$("p").css({"background-color":"yellow", "font-size":"200%"});
+		//css코드를 style 사용하지 않고 query에 직접 넣어줌!
+	});
+});
+</script>
+</head>
+<body>
+<p>김길동</p>
+<div>012345678</div>
+<p>김길동</p>
+<div>012345678</div>
+<p>김길동</p>
+<div>012345678</div>
+<br />
+<button>이름강조</button>
+</body>
+</html>

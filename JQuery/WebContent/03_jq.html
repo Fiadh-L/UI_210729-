@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+/* 문서준비 이벤트코드 */
+$(document).ready(function(){
+	//제이쿼리 : 기능구현이 들어있는 자바 스크립트
+	$("ans").hide();
+	$("p.q1").click(function(){
+		$("ans.q1").show();
+	});
+	$("ans.q1").click(function(){
+		$("ans.q1").hide();
+	});
+	$("p.q2").click(function(){
+		$("ans.q2").show();
+	});
+	$("ans.q2").click(function(){
+		$("ans.q2").hide();
+	});
+});
+
+
+</script>
+</head>
+<body>
+<h2>질문1 : 대한민국 수도는 어디입니까?</h2>
+<p class="q1">[정답보기]</p>
+<ans class="q1">대한민국의 수도는 <strong>서울</strong>입니다.</ans>
+<br />
+<h2>질문2 : 대한민국 국보 1호는 무엇입니까?</h2>
+<p class="q2">[정답보기]</p>
+<ans class="q2">대한민국 국보 1호는 <strong>숭례문</strong> 입니다</ans>
+<br />
+
+<button class="hide">메시지 삭제</button>
+<button class="show">메시지 보기</button>
+</body>
+</html>

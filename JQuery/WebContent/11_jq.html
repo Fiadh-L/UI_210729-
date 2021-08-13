@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button.b1").click(function() {
+		$("img").animate({width:'100px'});
+	});
+	$("button.b2").click(function() {
+        $("img").animate({width:'200px'});
+     });
+     
+     $("button.b3").click(function() {
+        $("img").animate({width:'300px'});
+     });
+});
+</script>
+
+   <style>
+        .css_pic {
+            height: 430px;
+            text-align: center;
+        }
+        .css_pic img {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+<div class="css_pic">
+<p>버튼을 누르면 그림의 크기가 변함</p>
+<button class="b1">가로 100픽셀</button>
+<button class="b2">가로 200픽셀</button>
+<button class="b3">가로 300픽셀</button><p/>
+
+<img src="./img/photo2.jpg" name="pic1" />
+</div>
+</body>
+</html>
+<!-- animate(속성,[지속시간]) : 속성을 지정하고 지속하시간 단위로 -->
