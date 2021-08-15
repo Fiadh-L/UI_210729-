@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ajax_HTML</title>
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+//form action(url), type(method)
+//form은 알아서 input 태그들을 전송하지만 ajax는 data 속성을 주어야한다
+$(function(){
+	$.ajax({
+		url:'01_list_ajax.jsp',
+		type:'GET',//대문자로 입력해야함
+		datatype:'html',
+		success: function(data){
+			console.log(data);
+			$("table").html(data) /*테이블에 데이터 담기*/
+		}
+	})	
+})
+</script>
+</head>
+<body>
+<form id="frm">
+<input type="text" name='content'/>
+<input type="button" name='submitButton' value='전송'/>
+</form>
+<table width="100%" border="1"></table>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#loadButton").click(function(){
+			$.ajax({
+				url:"dummy.json",
+			type:'GET',
+			datatype:"jason",
+			success: function(data){
+				alert(JSON.stringify(data));
+				console.log(data);
+				
+				var title="안녕하세요";
+				console.log(title);
+				
+				console.log(data.title);
+				console.log(data.subject);
+				console.log(data.list);
+				/*부분출력*/
+				$("#titleLayer").html("<h2>"+data.title+"</h2>")
+				$(".subjectLayer").html("<h2>"+data.subject+"</h2>")
+				/* 배열출력 */
+				var list=data.list;
+				var tableTag="";
+				/* for문 활용 */
+				/* for(var i=0;i<list.length;i++){
+					/* 
+					tableTag += "<tr><td>"+list[i].subject+"</td><td>"+list[i].content+"</td></tr>";
+				}
+				$("table").html(tableTag); */
+				/* append를 이용한 출력 */
+				/*$("table").append("<tr><td>"+list[i].subject+"</td><td>"+list[i].content+"</td></tr>");
+				} */
+				
+				$.each(list,function(index, row) {
+					tableTag += "<tr><td>" + row.subject+"</td><td>"+row.content+"</td></tr>";	
+				})
+					$("table").html(tableTag);
+				
+			}//success
+			});//ajax
+		})//click
+	});
+</script>
+</head>
+<body>
+	<input type="button" value="로드" id="loadButton"/>
+	<div id="titleLayer"></div>
+	<div class="subjectLayer"></div>
+	<table width="100%" border="1"></table>
+</body>
+</body>
+</html>
